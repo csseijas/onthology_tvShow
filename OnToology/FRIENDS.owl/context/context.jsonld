@@ -1,0 +1,201 @@
+{
+  "@context" : {
+    "Season_6" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Season_6"
+    },
+    "Main_actors" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Main_actors"
+    },
+    "Total_number" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Total_number"
+    },
+    "Secondary_actors" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Secondary_actors"
+    },
+    "Direction" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Direction"
+    },
+    "Season_4" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Season_4"
+    },
+    "Country" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Country"
+    },
+    "Music" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Music"
+    },
+    "has_rate_by_critics" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#has_rate_by_critics",
+      "@type" : "@id"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "Episodes" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Episodes"
+    },
+    "isRuleEnabled" : {
+      "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+    },
+    "hasReviews" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#hasReviews",
+      "@type" : "@id"
+    },
+    "hasID" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#hasID",
+      "@type" : "@id"
+    },
+    "has_rate_by_followers" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#has_rate_by_followers",
+      "@type" : "@id"
+    },
+    "Artist" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Artist"
+    },
+    "Theme_season_5" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Theme_season_5"
+    },
+    "Season_3" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Season_3"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "minNumberEpisodesValue" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#minNumberEpisodesValue"
+    },
+    "Season_1" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Season_1"
+    },
+    "Season_9" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Season_9"
+    },
+    "Synopsis" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Synopsis"
+    },
+    "Photography" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Photography"
+    },
+    "has_max_number_of_episodes_by_season" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#has_max_number_of_episodes_by_season",
+      "@type" : "@id"
+    },
+    "Range_episodes_season" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Range_episodes_season"
+    },
+    "Gender" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Gender"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "Theme_season_4" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Theme_season_4"
+    },
+    "has_min_number_of_episodes_by_season" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#has_min_number_of_episodes_by_season",
+      "@type" : "@id"
+    },
+    "Mean_duration_of_each_episode" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Mean_duration_of_each_episode"
+    },
+    "Theme_season_2" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Theme_season_2"
+    },
+    "Theme_season_6" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Theme_season_6"
+    },
+    "meanRateByCritics" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#meanRateByCritics"
+    },
+    "Theme_season_10" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Theme_season_10"
+    },
+    "Guionists" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Guionists"
+    },
+    "numberOfReviewsByIndividuals" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#numberOfReviewsByIndividuals"
+    },
+    "Producers" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Producers"
+    },
+    "maxNumberEpisodesValue" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#maxNumberEpisodesValue"
+    },
+    "Theme_season_1" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Theme_season_1"
+    },
+    "Theme_season_3" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Theme_season_3"
+    },
+    "Season_10" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Season_10"
+    },
+    "Friends" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Friends"
+    },
+    "Creators" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Creators"
+    },
+    "Actors" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Actors"
+    },
+    "Thema_season_8" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Thema_season_8"
+    },
+    "idTVShow" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#idTVShow"
+    },
+    "Theme_season_7" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Theme_season_7"
+    },
+    "Main_song" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Main_song"
+    },
+    "Seasons" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Seasons"
+    },
+    "Season_8" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Season_8"
+    },
+    "Season_7" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Season_7"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Others" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Others"
+    },
+    "Season_5" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Season_5"
+    },
+    "meanRateByFollowers" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#meanRateByFollowers"
+    },
+    "hasCriticsReviews" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#hasCriticsReviews",
+      "@type" : "@id"
+    },
+    "Cameos" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Cameos"
+    },
+    "First_channel_emited_by" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#First_channel_emited_by"
+    },
+    "numberOfReviewsByCritics" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#numberOfReviewsByCritics"
+    },
+    "Theme_season_9" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Theme_season_9"
+    },
+    "Season_2" : {
+      "@id" : "http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Season_2"
+    }
+  }
+}
