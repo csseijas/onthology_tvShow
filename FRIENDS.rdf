@@ -61,6 +61,8 @@ Author: Carlos Sánchez Seijas</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#hasCriticsReviews">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Friends"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Friends"/>
     </owl:ObjectProperty>
     
 
@@ -70,6 +72,7 @@ Author: Carlos Sánchez Seijas</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#hasID">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Friends"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Friends"/>
     </owl:ObjectProperty>
     
 
@@ -79,6 +82,8 @@ Author: Carlos Sánchez Seijas</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#hasReviews">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Friends"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Friends"/>
     </owl:ObjectProperty>
     
 
@@ -87,9 +92,8 @@ Author: Carlos Sánchez Seijas</rdfs:comment>
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#has_max_number_of_episodes_by_season">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Episodes"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Friends"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Range_episodes_season"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Range_episodes_season"/>
     </owl:ObjectProperty>
     
 
@@ -99,12 +103,8 @@ Author: Carlos Sánchez Seijas</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#has_min_number_of_episodes_by_season">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#has_min_number_of_episodes_by_season"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Range_episodes_season"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Range_episodes_season"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Range_episodes_season"/>
     </owl:ObjectProperty>
     
 
@@ -114,6 +114,8 @@ Author: Carlos Sánchez Seijas</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#has_rate_by_critics">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Friends"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Friends"/>
     </owl:ObjectProperty>
     
 
@@ -123,12 +125,7 @@ Author: Carlos Sánchez Seijas</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#has_rate_by_followers">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Friends"/>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#has_rate_by_followers"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Friends"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Friends"/>
     </owl:ObjectProperty>
     
 
@@ -148,19 +145,13 @@ Author: Carlos Sánchez Seijas</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#idTVShow">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Friends"/>
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#hasID"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Friends"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Friends"/>
             </owl:Restriction>
         </rdfs:domain>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#idTVShow"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
@@ -169,9 +160,13 @@ Author: Carlos Sánchez Seijas</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#maxNumberEpisodesValue">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Episodes"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Friends"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Range_episodes_season"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#has_max_number_of_episodes_by_season"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Range_episodes_season"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
@@ -180,19 +175,13 @@ Author: Carlos Sánchez Seijas</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#meanRateByCritics">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Friends"/>
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#has_rate_by_critics"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Friends"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Friends"/>
             </owl:Restriction>
         </rdfs:domain>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#meanRateByCritics"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
     </owl:DatatypeProperty>
     
 
@@ -200,19 +189,13 @@ Author: Carlos Sánchez Seijas</rdfs:comment>
     <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#meanRateByFollowers -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#meanRateByFollowers">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Friends"/>
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#has_rate_by_followers"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Friends"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Friends"/>
             </owl:Restriction>
         </rdfs:domain>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#meanRateByFollowers"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
     </owl:DatatypeProperty>
     
 
@@ -221,13 +204,13 @@ Author: Carlos Sánchez Seijas</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#minNumberEpisodesValue">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Friends"/>
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#has_min_number_of_episodes_by_season"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Range_episodes_season"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Friends"/>
             </owl:Restriction>
         </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
@@ -236,19 +219,13 @@ Author: Carlos Sánchez Seijas</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#numberOfReviewsByCritics">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Friends"/>
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#hasCriticsReviews"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Friends"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Friends"/>
             </owl:Restriction>
         </rdfs:domain>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#numberOfReviewsByCritics"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
@@ -257,19 +234,13 @@ Author: Carlos Sánchez Seijas</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#numberOfReviewsByIndividuals">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Friends"/>
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#hasReviews"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Friends"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#Friends"/>
             </owl:Restriction>
         </rdfs:domain>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/untitled-ontology-4#numberOfReviewsByIndividuals"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
