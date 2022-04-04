@@ -1,0 +1,1437 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#"
+     xml:base="http://www.semanticweb.org/carlin/ontologies/2022/2/friends"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+        <dc:rights>https://creativecommons.org/licenses/by/4.0</dc:rights>
+        <dcterms:abstract>Friends TV SHow</dcterms:abstract>
+        <dcterms:contributor>Carlos Sánchez Seijas</dcterms:contributor>
+        <dcterms:creator>Carlos Sánchez Seijas</dcterms:creator>
+        <dcterms:date>2022-04-02</dcterms:date>
+        <dcterms:identifier>143124pooi</dcterms:identifier>
+        <dcterms:license>https://creativecommons.org/licenses/by/4.0</dcterms:license>
+        <dcterms:publisher>UOC</dcterms:publisher>
+        <dcterms:title>Friends TV Show</dcterms:title>
+        <rdfs:comment xml:lang="en">Friends - TV series - Author: Carlos Sánchez Seijas</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#hasCriticsReviews -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#hasCriticsReviews">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#hasReviews"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#hasID -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#hasID">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#hasMaxNumberOfEpisodesBySeason -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#hasMaxNumberOfEpisodesBySeason">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Range_episodes_season"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Range_episodes_season"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#hasMinNumberOfEpisodesBySeason -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#hasMinNumberOfEpisodesBySeason">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Range_episodes_season"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Range_episodes_season"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#hasRateByCritics -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#hasRateByCritics">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#hasRateByFollowers -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#hasRateByFollowers">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#hasReviews -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#hasReviews">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#idTVShow -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#idTVShow">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#hasID"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#12345AssA54321"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#maxNumberEpisodesValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#maxNumberEpisodesValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#hasMaxNumberOfEpisodesBySeason"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Range_episodes_season"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#meanRateByCritics -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#meanRateByCritics">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#hasRateByCritics"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#meanRateByFollowers -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#meanRateByFollowers">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#hasRateByFollowers"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#minNumberEpisodesValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#minNumberEpisodesValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#hasMinNumberOfEpisodesBySeason"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#numberOfReviewsByCritics -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#numberOfReviewsByCritics">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#hasCriticsReviews"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#numberOfReviewsByIndividuals -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#numberOfReviewsByIndividuals">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#hasReviews"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Actors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Actors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends"/>
+        <rdfs:comment xml:lang="en">Real name of the actors and actreess in the TV Show</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Artist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Artist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Music"/>
+        <rdfs:comment xml:lang="en">Artist BSO</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Cameos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Cameos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Actors"/>
+        <rdfs:comment xml:lang="en">Cameos</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends"/>
+        <rdfs:comment xml:lang="en">Country in what was produced and financed</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Creators -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Creators">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Direction"/>
+        <rdfs:comment xml:lang="en">Creators</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Direction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Direction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends"/>
+        <rdfs:comment xml:lang="en">Directors</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Episodes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Episodes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends"/>
+        <rdfs:comment xml:lang="en">Episodes</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#First_channel_emited_by -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#First_channel_emited_by">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends"/>
+        <rdfs:comment xml:lang="en">first channel that emitted the tv show</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends">
+        <rdfs:comment xml:lang="en">TV Show: Friends
+Author Carlos SÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡nchez Seijas</rdfs:comment>
+        <rdfs:sameAs xml:lang="en">https://dbpedia.org/ontology/TelevisionShow</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Gender -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Gender">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends"/>
+        <rdfs:comment xml:lang="en">gender</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Guionists -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Guionists">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Main_actors"/>
+        <rdfs:comment xml:lang="en">Guionists</rdfs:comment>
+        <rdfs:sameAs xml:lang="en">https://dbpedia.org/ontology/storyEditor</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Main_actors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Main_actors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Actors"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Others"/>
+        <rdfs:comment xml:lang="en">Main actors and actreess</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Main_song -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Main_song">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Music"/>
+        <rdfs:comment xml:lang="en">BSO</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Mean_duration_of_each_episode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Mean_duration_of_each_episode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Episodes"/>
+        <rdfs:comment xml:lang="en">mean duration of episodes</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Music -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Music">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends"/>
+        <rdfs:comment xml:lang="en">Music BSO</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Others -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Others">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Direction"/>
+        <rdfs:comment xml:lang="en">Other directors charges</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Photography -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Photography">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Producers"/>
+        <rdfs:comment xml:lang="en">in charge of the photography of the TV Show</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Producers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Producers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends"/>
+        <rdfs:comment xml:lang="en">Producer</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Range_episodes_season -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Range_episodes_season">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Episodes"/>
+        <rdfs:comment xml:lang="en">range of number of episodes by season</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Season_1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Season_1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Seasons"/>
+        <rdfs:comment xml:lang="en">Season 1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Season_10 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Season_10">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Seasons"/>
+        <rdfs:comment xml:lang="en">Season 10</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Season_2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Season_2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Seasons"/>
+        <rdfs:comment xml:lang="en">Season 2</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Season_3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Season_3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Seasons"/>
+        <rdfs:comment xml:lang="en">Season 3</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Season_4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Season_4">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Seasons"/>
+        <rdfs:comment xml:lang="en">Season 4</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Season_5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Season_5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Seasons"/>
+        <rdfs:comment xml:lang="en">Season 5</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Season_6 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Season_6">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Seasons"/>
+        <rdfs:comment xml:lang="en">season 6</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Season_7 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Season_7">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Seasons"/>
+        <rdfs:comment xml:lang="en">Season 7</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Season_8 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Season_8">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Seasons"/>
+        <rdfs:comment xml:lang="en">Season 8</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Season_9 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Season_9">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Seasons"/>
+        <rdfs:comment xml:lang="en">Season 9</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Seasons -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Seasons">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends"/>
+        <rdfs:comment xml:lang="en">Seasons</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Actors"/>
+        <rdfs:comment xml:lang="en">Secondary actors and actreess</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Synopsis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Synopsis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends"/>
+        <rdfs:comment xml:lang="en">Short synopsis</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Thema_season_8 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Thema_season_8">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Season_8"/>
+        <rdfs:comment xml:lang="en">Plot season 8</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Theme_season_1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Theme_season_1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Season_1"/>
+        <rdfs:comment xml:lang="en">Plot season 1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Theme_season_10 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Theme_season_10">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Season_10"/>
+        <rdfs:comment xml:lang="en">Plot season 10</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Theme_season_2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Theme_season_2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Season_2"/>
+        <rdfs:comment xml:lang="en">Plot season 2</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Theme_season_3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Theme_season_3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Season_3"/>
+        <rdfs:comment xml:lang="en">Plot season 3</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Theme_season_4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Theme_season_4">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Season_4"/>
+        <rdfs:comment xml:lang="en">Plot season 4</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Theme_season_5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Theme_season_5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Season_5"/>
+        <rdfs:comment xml:lang="en">Plot season 5</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Theme_season_6 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Theme_season_6">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Season_5"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Season_6"/>
+        <rdfs:comment xml:lang="en">Plot season 6</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Theme_season_7 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Theme_season_7">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Season_7"/>
+        <rdfs:comment xml:lang="en">Plot season 7</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Theme_season_9 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Theme_season_9">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Season_9"/>
+        <rdfs:comment xml:lang="en">Plot season 9</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Total_number -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Total_number">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Episodes"/>
+        <rdfs:comment xml:lang="en">total number of episodes</rdfs:comment>
+        <rdfs:sameAs xml:lang="en">https://dbpedia.org/ontology/numberOfEpisodes</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Aisha_Tyler -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Aisha_Tyler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Alec_Baldwin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Alec_Baldwin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Cameos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Alexandra_Holden -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Alexandra_Holden">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Alison_La_Placa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Alison_La_Placa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Amanda_Carlin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Amanda_Carlin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Anna_Faris -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Anna_Faris">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Bonnie_Somerville -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Bonnie_Somerville">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Bruce_Willis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Bruce_Willis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Cameos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Christina_Applegate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Christina_Applegate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Christina_Pickles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Christina_Pickles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Cole_Sprouse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Cole_Sprouse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Cosimo_Fusco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Cosimo_Fusco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Courteney_Cox -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Courteney_Cox">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Main_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Cynthia_Mann -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Cynthia_Mann">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#David_Schwimmer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#David_Schwimmer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Main_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Debra_Jo_Rupp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Debra_Jo_Rupp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Dermot_Mulroney -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Dermot_Mulroney">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Dina_Meyer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Dina_Meyer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Eddie_Cahill -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Eddie_Cahill">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Elle_MacPherson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Elle_MacPherson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Cameos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Elliott_Gould -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Elliott_Gould">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Giovanni_Ribisi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Giovanni_Ribisi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Hank_Azaria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Hank_Azaria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Helen_Baxendale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Helen_Baxendale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#James_Michael_Tyler -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#James_Michael_Tyler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Jane_Sibbett -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Jane_Sibbett">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Jennifer_Anniston -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Jennifer_Anniston">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Main_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Jessica_Hecht -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Jessica_Hecht">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Jessica_Wake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Jessica_Wake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Joanna_Gleason -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Joanna_Gleason">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Jon_Favreau -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Jon_Favreau">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Jon_Lovitz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Jon_Lovitz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#June_Gable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#June_Gable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Kathleen_Turner -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Kathleen_Turner">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Kim_Harris -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Kim_Harris">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Larry_Hankin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Larry_Hankin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Laura_Dean -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Laura_Dean">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Lauren_Tom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Lauren_Tom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Lisa_Kudrow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Lisa_Kudrow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Main_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Maggie_Wheeler -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Maggie_Wheeler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Matt_LeBlanc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Matt_LeBlanc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Main_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Matthew_Perry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Matthew_Perry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Main_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Melissa_George -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Melissa_George">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Michael_Rapaport -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Michael_Rapaport">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Mike_Hagerty -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Mike_Hagerty">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Mitchell_Whitfield -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Mitchell_Whitfield">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Morgan_Fairchild -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Morgan_Fairchild">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Paget_Brewster -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Paget_Brewster">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Paul_Rudd -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Paul_Rudd">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Ron_Leibman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Ron_Leibman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Sean_Penn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Sean_Penn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Cameos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Steve_Ireland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Steve_Ireland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Steven_Eckholdt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Steven_Eckholdt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Tate_Donovan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Tate_Donovan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Teri_Garr -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Teri_Garr">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Tom_Selleck -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Tom_Selleck">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#USA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#USA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#12345AssA54321 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#12345AssA54321">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Adam_Goldberg, -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Adam_Goldberg,">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Christine_Taylor, -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Christine_Taylor,">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Secondary_actors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#d">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#numberofreview">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#newnumberofreview">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#rate">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ceiling_rate_reviews_critics</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#hasRateByCritics"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#rate"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#ceiling"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#rate"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">floor_rate_review_followers</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#hasRateByFollowers"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#rate"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#ceiling"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#rate"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">if_new_critic_review_add_one_review_to_total_number_of_reviews</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#Friends"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#hasCriticsReviews"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#d"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#numberofreview"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#hasReviews"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#d"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#newnumberofreview"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#add"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#newnumberofreview"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#numberofreview"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#hasReviews"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#d"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/carlin/ontologies/2022/2/friends#newnumberofreview"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
